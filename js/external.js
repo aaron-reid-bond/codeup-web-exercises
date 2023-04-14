@@ -45,7 +45,7 @@ function classEnrollment(classFull, scheduleConflict, canEnrol){
 }
 classEnrollment(classFull, scheduleConflict, canEnrol)
 
-alert('Great news we have a free product offer! if you have 2 or more of x product and this offer is not expired then you will recieve this product!')
+alert('Great news we have a free product offer! if you have 2 or more of x product and this offer is not expired then you will receive this product!')
 
 alert('Even better news! Premium Members have no restrictions on the amount of product x to qualify!')
 
