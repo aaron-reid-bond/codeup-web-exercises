@@ -21,7 +21,7 @@ function sayHello(name){
  * console.log 'helloMessage' to check your work
  */
 
-let helloMessage = sayHello('Bob The Builder')
+let helloMessage = sayHello('Bond, Aaron Bond')
 console.log(helloMessage);
 
 /**
@@ -31,12 +31,12 @@ console.log(helloMessage);
  * console.
  */
 
-let myName = 'Bob The Builder'
+let myName = 'Double O something'
 console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
+let random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
@@ -58,9 +58,9 @@ var random = Math.floor((Math.random() * 3) + 1);
 
 function isTwo(number) {
     if (number === 2) {
-        console.log('the number is true');
+        console.log('the number ' + number + ' is 2');
     } else {
-        console.log('the number is \'false\'');
+        console.log('the number ' + number+ ' is not 2');
 }}
 
 console.log(isTwo(random));
@@ -76,6 +76,19 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+(function () {
+    let bill = Math.floor(Math.random() * 100);
+    let tip = (prompt(" Your Bill will be $" + bill + ' What tip percentage would you like to include?'))
+    let tipPercentage = tip * .0100
+    let tipValue = tipPercentage * bill
+    let tolalPre = bill + tipValue
+    let total = tolalPre.toFixed(2)
+
+function calculateTip(number){
+
+    return tipValue
+}
+console.log(calculateTip())
 
 /**
  * TODO:
@@ -83,7 +96,9 @@ console.log(isTwo(random));
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+alert('Your total with the tip added will be $' + total)
 
+})();
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -98,3 +113,16 @@ console.log(isTwo(random));
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+(function () {
+    let originalPrice = 100;
+    let discountPercent = .25; // 25%
+    let discountAmount = originalPrice * discountPercent
+
+
+function applyDiscount (number){
+    return originalPrice - discountAmount
+}
+
+console.log(applyDiscount())
+
+})();
