@@ -9,8 +9,8 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 function sayHello(name){
-    return 'hello ' + name + '!'
-}
+    return 'hello ' + name + '!';
+};
 
 
 /**
@@ -21,7 +21,7 @@ function sayHello(name){
  * console.log 'helloMessage' to check your work
  */
 
-let helloMessage = sayHello('Bond, Aaron Bond')
+let helloMessage = sayHello('Bond, Aaron Bond');
 console.log(helloMessage);
 
 /**
@@ -31,7 +31,7 @@ console.log(helloMessage);
  * console.
  */
 
-let myName = 'Double O something'
+let myName = 'Double O something';
 console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -61,7 +61,7 @@ function isTwo(number) {
         console.log('the number ' + number + ' is 2');
     } else {
         console.log('the number ' + number+ ' is not 2');
-}}
+}};
 
 console.log(isTwo(random));
 
@@ -78,17 +78,17 @@ console.log(isTwo(random));
  */
 (function () {
     let bill = Math.floor(Math.random() * 100);
-    let tip = (prompt(" Your Bill will be $" + bill + ' What tip percentage would you like to include?'))
-    let tipPercentage = tip * .0100
-    let tipValue = tipPercentage * bill
-    let totalPre = bill + tipValue
-    let total = totalPre.toFixed(2)
+    let tip = (prompt(" Your Bill will be $" + bill + ' What tip percentage would you like to include?'));
+    let tipPercentage = tip * .0100;
+    let tipValue = tipPercentage * bill;
+    let totalPre = bill + tipValue;
+    let total = totalPre.toFixed(2);
 
 function calculateTip(number){
 
-    return ' the tip is $' + tipValue
+    return ' the tip is $' + tipValue;
 }
-console.log(calculateTip())
+console.log(calculateTip());
 
 /**
  * TODO:
@@ -96,7 +96,7 @@ console.log(calculateTip())
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-alert('Your total with the tip added will be $' + total)
+alert('Your total with the tip added will be $' + total);
 
 })();
 /**
@@ -116,13 +116,13 @@ alert('Your total with the tip added will be $' + total)
 (function () {
     let originalPrice = 100;
     let discountPercent = .25; // 25%
-    let discountAmount = originalPrice * discountPercent
+    let discountAmount = originalPrice * discountPercent;
 
 
 function applyDiscount (number){
-    return originalPrice - discountAmount
+    return originalPrice - discountAmount;
 }
 
-console.log(applyDiscount())
+console.log(applyDiscount());
 
 })();
