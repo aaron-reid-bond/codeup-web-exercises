@@ -22,6 +22,17 @@
  * console.logging the function's return value
  */
 
+function analyzeColor (color) {
+    if (color === 'blue') {
+        return "Blue is the color of water!";
+    } else if (color === 'cyan') {
+        return "I don't know anything about cyan";
+    } else {
+        return "Unfortunately " + color + " is not the color of water!";
+}}
+
+
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -35,10 +46,26 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
+// console.log(analyzeColor(randomColor));
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+
+switch (randomColor) {
+    case "blue":
+        console.log("Blue is the color of water!");
+        break
+    case "cyan":
+        console.log("I don't know anything about cyan");
+        break
+    default:
+        console.log("Unfortunately " + randomColor + " is not the color of water!");
+
+}
+
+
 
 /**
  * TODO:
@@ -47,6 +74,9 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * function to show it to the user.
  */
 
+let colorPrompt = prompt("Give me a color!");
+
+console.log(analyzeColor(colorPrompt));
 /* ########################################################################## */
 
 /**
@@ -69,6 +99,29 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
+
+function calculateTotal(luckyNumber, total) {
+    let ten = .10;
+    let twentyFive = .25;
+    let thirtyFive = .35;
+    let fifty = .50;
+    let oneHundred = 0;
+    if(luckyNumber === 0){
+        return 'Sorry no discount was applied to this purchase.';
+    } else if(luckyNumber === 1){
+        return 'Congrats you just won 10% off your purchase. your total is $' + total * ten;
+    } else if(luckyNumber === 2){
+        return 'Congrats you just won 25% off your purchase. your total is $' + total * twentyFive;
+    } else if(luckyNumber === 3){
+        return 'Congrats you just won 35% off your purchase. your total is $' + total * thirtyFive;
+    } else if(luckyNumber === 4){
+        return 'Congrats you just won 50% off your purchase. your total is $' + total * fifty;
+    } else if(luckyNumber === 5){
+        return 'Congrats you just won 100% off your purchase. your total is $' + total * oneHundred;
+}}
+
+//console.log(calculateTotal(4, 100));
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -78,7 +131,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+
+var luckyNumber = Math.floor(Math.random() * 6);
+let totalBill =prompt('What is your total bill?');
+
+console.log(calculateTotal(luckyNumber, totalBill));
 
 /**
  * TODO:
@@ -98,3 +155,51 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+let numberConfirm = confirm('Would you like to enter a number?');
+
+function userConfirm (numberConfirm) {
+    if(numberConfirm === true) {
+        let userNumber = prompt('What number would you like to use?');
+
+
+        function isNumber (userNumber){
+            if(isNaN(userNumber)){
+                alert(userNumber + ' is not a number')
+            }
+        }
+
+        isNumber(userNumber)
+        function evenNumber (userNumber){
+            if(userNumber % 2 == 0) {
+                alert('Your number ' + userNumber + ' is even!');
+            } else {
+                alert('Your number ' + userNumber + ' is odd!');
+            }
+        }
+
+        evenNumber(userNumber);
+
+        function add100 (userNumber){
+            alert('Your number number ' + userNumber + ' + 100 = ' + (Number(userNumber)+ 100));
+        }
+
+        add100(userNumber);
+
+        function isPositive (userNumber) {
+            if (userNumber > 0) {
+                alert("The number is positive");
+            } else if (userNumber == 0) {
+                alert("The number is zero");
+            } else {
+                alert("The number is negative");
+            }
+        }
+
+        isPositive(userNumber);
+    } else {
+        alert('Oh ok then.')
+    }
+
+}
+
+userConfirm(numberConfirm)
