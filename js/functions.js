@@ -63,7 +63,7 @@ function isTwo(number) {
         console.log('the number ' + number+ ' is not 2');
 }};
 
-console.log(isTwo(random));
+isTwo(random);
 
 /**
  * TODO:
@@ -86,7 +86,7 @@ console.log(isTwo(random));
 
 function calculateTip(number){
 
-    return ' the tip is $' + tipValue;
+    return 'the tip is $' + tipValue;
 }
 console.log(calculateTip());
 
