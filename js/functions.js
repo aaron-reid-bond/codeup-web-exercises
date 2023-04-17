@@ -9,7 +9,7 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 function sayHello(name){
-    return name
+    return 'hello ' + name + '!'
 }
 
 
@@ -81,12 +81,12 @@ console.log(isTwo(random));
     let tip = (prompt(" Your Bill will be $" + bill + ' What tip percentage would you like to include?'))
     let tipPercentage = tip * .0100
     let tipValue = tipPercentage * bill
-    let tolalPre = bill + tipValue
-    let total = tolalPre.toFixed(2)
+    let totalPre = bill + tipValue
+    let total = totalPre.toFixed(2)
 
 function calculateTip(number){
 
-    return tipValue
+    return ' the tip is $' + tipValue
 }
 console.log(calculateTip())
 
