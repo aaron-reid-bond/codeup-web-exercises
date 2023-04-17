@@ -170,7 +170,7 @@ function userConfirm (numberConfirm) {
 
         isNumber(userNumber)
         function evenNumber (userNumber){
-            if(userNumber % 2 == 0) {
+            if(userNumber % 2 === 0) {
                 alert('Your number ' + userNumber + ' is even!');
             } else {
                 alert('Your number ' + userNumber + ' is odd!');
@@ -188,7 +188,7 @@ function userConfirm (numberConfirm) {
         function isPositive (userNumber) {
             if (userNumber > 0) {
                 alert("The number is positive");
-            } else if (userNumber == 0) {
+            } else if (userNumber === 0) {
                 alert("The number is zero");
             } else {
                 alert("The number is negative");
