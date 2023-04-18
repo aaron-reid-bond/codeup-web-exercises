@@ -76,7 +76,7 @@ switch (randomColor) {
 
 let colorPrompt = prompt("Give me a color!");
 
-console.log(analyzeColor(colorPrompt));
+alert(analyzeColor(colorPrompt));
 /* ########################################################################## */
 
 /**
