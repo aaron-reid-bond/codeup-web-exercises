@@ -135,7 +135,9 @@ function calculateTotal(luckyNumber, total) {
 var luckyNumber = Math.floor(Math.random() * 6);
 let totalBill =prompt('What is your total bill?');
 
-console.log(calculateTotal(luckyNumber, totalBill));
+// console.log(calculateTotal(luckyNumber, totalBill));
+
+alert('Your LM is ' + luckyNumber + '. your bill is $' + totalBill + ' with discount your total is $' + calculateTotal(luckyNumber, totalBill))
 
 /**
  * TODO:
