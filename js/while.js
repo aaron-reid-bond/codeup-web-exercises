@@ -1,10 +1,17 @@
 "use strict";
 
-let y=1
-while (y < 70000) {
-    console.log(y);
-    y *= 2;
+
+let z=1;
+while (z < 70000) {
+    console.log(z);
+    z *= 2;
 }
+
+// let x = 1
+// while (x < Math.pow(100,6)) {
+//     console.log(x);
+//     x *= Math.pow(2, 2);
+// }
 
 var allCones = Math.floor(Math.random() * 50) + 50;
 console.log(`${allCones} ready to sell`)
