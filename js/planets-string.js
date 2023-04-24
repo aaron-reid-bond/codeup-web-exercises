@@ -31,5 +31,5 @@
     console.log(planetBreak)
 
     let planetList ="<h1>The planets of the solar system</h1><ul>Mercury<li>Venus<li>Earth<li>Mars<li>Jupiter<li>Saturn<li>Uranus<li>Neptune</ul>"
-
+    console.log(planetList)
 })();
