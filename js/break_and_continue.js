@@ -51,6 +51,7 @@ function test(){
     for (let x = 1; x < 50; x += 2) {
         if (x === oddNumber) {
             console.log(`WE SKIPPED! ${oddNumber}`)
+
             continue
         }
         console.log('odd number: ' + x);
