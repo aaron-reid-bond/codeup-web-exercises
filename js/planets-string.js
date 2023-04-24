@@ -30,6 +30,6 @@
     let planetBreak = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune"
     console.log(planetBreak)
 
-    let planetList ="<h1>The planets of the solar system</h1><ul>Mercury<li>Venus<li>Earth<li>Mars<li>Jupiter<li>Saturn<li>Uranus<li>Neptune</ul>"
+    let planetList ="<h1>The planets of the solar system</h1><ul><li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li></ul>"
     console.log(planetList)
 })();
