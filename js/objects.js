@@ -56,7 +56,7 @@
 
     shoppers.forEach(function (x){
         if(x.amount >= 200){
-            console.log(`${x.name} gets a %12 discount on their amount of ${x.amount} making their total $${x.amount * .12}`)
+            console.log(`${x.name} gets a %12 discount on their amount of ${x.amount} making their total $${x.amount- (x.amount * .12)}`)
         } else {
             console.log(`${x.name} dose not get a %12 discount on their amount of ${x.amount}`)
         }
