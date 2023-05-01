@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Forms Exercise</title>
+  </head>
+  <body>
+      <form method="POST" action="https://request-inspector.glitch.me/">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="bio"><h3>Tell us about yourself!</h3></label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <br>
+        <label for="hear"><h3>How did you hear about us?</h3></label>
+        <input type="checkbox" name="hear" id="hear"><label for="hear">billboard</label>
+        <input type="checkbox" name="hear" id="hear1"><label for="hear1">Radio Advert</label>
+        <input type="checkbox" name="hear" id="hear2"><label for="hear2">Internet Advert</label>
+        <input type="checkbox" name="hear" id="hear3"><label for="hear3">Other</label>
+        <br>
+        <label for="browser"><h3>What web browser do you use?</h3></label>
+        <select name="browser" id="browser">
+          <option value="chrome">Chrome</option>
+          <option value="safari">Safari</option>
+          <option value="pos">POS</option>
+        </select>
+      </form>
+  </body>
+</html>
