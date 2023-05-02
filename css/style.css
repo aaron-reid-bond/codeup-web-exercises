@@ -1,3 +1,7 @@
+body {
+    background-color: bisque;
+}
+
 .fancy-header{
     color: purple;
     text-decoration: underline;

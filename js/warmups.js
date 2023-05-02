@@ -26,3 +26,19 @@
 //
 // console.log(findFactors(ranNum(500, 1)));
 
+function countEs(x) {
+    if(typeof x === "string"){
+        let lowercase = x.toLowerCase()
+        let count = (lowercase.match(/e/g) || []).length;
+        return count
+    } else {
+        return false
+    }
+}
+
+console.log(countEs("Ease")); // returns 2;
+console.log(countEs("teleconference")); // returns 5;
+console.log(countEs("TOM")); // returns 0;
+console.log(countEs(true)); // returns false;
+console.log(countEs(['e', 'E'])); // returns false;
+console.log(countEs()); // returns false;
