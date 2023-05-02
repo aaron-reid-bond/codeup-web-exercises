@@ -1,8 +1,46 @@
 body {
-    background-color: bisque;
+    background-color: beige;
+    background-image: url("/img/wrap.jpeg");
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+th, td, tr {
+    padding-left: 20%;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style: square;
 }
 
 .fancy-header{
     color: purple;
     text-decoration: underline;
+    text-align: center;
 }
+h2 {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+/* unvisited link (:link) */
+a:link {
+    color:red;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
+}
+
+
