@@ -12,7 +12,7 @@ body, html {
 
 form {
     padding: 1em;
-    border-width: 1em;
+    margin: 1em;
     /* This form should be separated from other elements by 1em */
     /* There must be 1em between the content and the border of this element */
 }
@@ -22,7 +22,8 @@ fieldset {
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     padding: 1em;
-    background-color: white;
+    border: 0;
+    background: white;
     /* There must be 1em between the content and the border of this element */
     /* It should have no border */
     /* Its background should be white */

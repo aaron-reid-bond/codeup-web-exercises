@@ -1,3 +1,14 @@
+:root {
+    --bg-info-background-color: #cddeff;
+    --bg-text-color: #332990;
+    --bg-success-background-color: #cff3da;
+    --bg-success-color: #28734c;
+    --bg-warning-background-color: #fcfbc9;
+    --bg-warning-color: #8b770e;
+    --bg-error-background-color: #fad3d7;
+    --bg-error-color: #821732;
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -16,19 +27,19 @@ body, html {
 }
 
 .message-info {
-    background-color: #cddeff;
-    color: #332990
+    background-color: var(--bg-info-background-color);
+    color: var(--bg-text-color);
 }
 
 .message-success {
-    background-color: #cff3da;
-    color: #28734c
+    background-color: var(--bg-success-background-color);
+    color: var(--bg-success-color);
 }
 .message-warning {
-    background-color: #fcfbc9;
-    color: #8b770e
+    background-color: var(--bg-warning-background-color);
+    color: var(--bg-warning-color);
 }
 .message-error {
-    background-color: #fad3d7;
-    color: #821732
+    background-color: var(--bg-error-background-color);
+    color: var(--bg-error-color)
 }
