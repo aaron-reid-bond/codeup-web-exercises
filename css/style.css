@@ -1,12 +1,13 @@
 body {
-    background-color: beige;
     background-image: url("/img/wrap.jpeg");
+    background-color: floralwhite;
     font-family: 'Bruno Ace SC', cursive;
 }
 
 th, td, tr {
     padding-left: 20%;
     font-size: 1.1em;
+    image-resolution: 450;
 }
 
 ul {
