@@ -46,19 +46,35 @@
 
 // Write a function that takes in a string and returns true if the argument contains at least one instance of the letter ‘e’. This should be case-insensitive. If the argument is not a string, or if the argument does not contain ‘e’ it should return false.
 
-function isThereAnE (x) {
-    if(typeof x === "string"){
-        let lowCase = x.toLowerCase()
-        let test = lowCase.includes('e')
-        return  test
-    } else {
-        return false
+// 4
+// function isThereAnE (x) {
+//     if(typeof x === "string"){
+//         let lowCase = x.toLowerCase()
+//         let test = lowCase.includes('e')
+//         return  test
+//     } else {
+//         return false
+//     }
+// }
+//
+// console.log(isThereAnE('Bob'));
+// console.log(isThereAnE('Wille'));
+// console.log(isThereAnE('Entropy'));
+// console.log(isThereAnE('Entitled'));
+// console.log(isThereAnE(['1', 'Five']));
+// console.log(isThereAnE(63));
+
+function fizzBuzz () {
+    for(var i = 1; i <= 100; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log('Fizz Buzz')
+        } else if(i % 3 === 0) {
+            console.log('Fizz');
+        } else {
+            console.log(i)
+        }
     }
+
 }
 
-console.log(isThereAnE('Bob'));
-console.log(isThereAnE('Wille'));
-console.log(isThereAnE('Entropy'));
-console.log(isThereAnE('Entitled'));
-console.log(isThereAnE(['1', 'Five']));
-console.log(isThereAnE(63));
+fizzBuzz()
