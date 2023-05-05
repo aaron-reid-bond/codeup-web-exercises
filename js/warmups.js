@@ -64,19 +64,29 @@
 // console.log(isThereAnE(['1', 'Five']));
 // console.log(isThereAnE(63));
 
-function fizzBuzz () {
-    for(var i = 1; i <= 100; i++) {
-        if(i % 3 === 0 && i % 5 === 0) {
-            console.log('Fizz Buzz')
-        } else if(i % 3 === 0) {
-            console.log('Fizz');
-        } else if(i % 5 === 0) {
-            console.log('Buzz');
-        } else {
-            console.log(i)
-        }
-    }
+// 5
+// function fizzBuzz () {
+//     for(var i = 1; i <= 100; i++) {
+//         if(i % 3 === 0 && i % 5 === 0) {
+//             console.log('Fizz Buzz')
+//         } else if(i % 3 === 0) {
+//             console.log('Fizz');
+//         } else if(i % 5 === 0) {
+//             console.log('Buzz');
+//         } else {
+//             console.log(i)
+//         }
+//     }
+//
+// }
+//
+// fizzBuzz()
 
-}
+// 6
+let i = 2;
+const n = 1000000;
 
-fizzBuzz()
+do {
+    console.log(i);
+    i = Math.pow(i, 2);
+} while(i < n);

@@ -17,7 +17,7 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 header {
-    background-image: url("https://picsum.photos/1200/300?grayscale");
+    background-image: url("https://picsum.photos/id/41/1200/300?grayscale&blur=3");
     background-size: cover;
     min-height: 300px;
     padding-top: 275px;
@@ -50,17 +50,17 @@ a {
 }
 .profile-image {
     position: absolute;
-    top: -40px;
+    top: 240px;
+    left: 20px;
 
 }
 .profile-form {
-    position: absolute;
-    top: 15px;
-    right: 0;
+    float: right;
+    line-height: 80px;
+    padding-right: 20px;
 }
 .profile {
     background: var(--light-bg);
-    position: relative;
     height: 80px;
 }
 .container {
