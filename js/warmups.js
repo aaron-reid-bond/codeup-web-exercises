@@ -83,10 +83,11 @@
 // fizzBuzz()
 
 // 6
-let i = 2;
-const n = 1000000;
+// let i = 2;
+// const n = 1000000;
+//
+// do {
+//     console.log(i);
+//     i = Math.pow(i, 2);
+// } while(i < n);
 
-do {
-    console.log(i);
-    i = Math.pow(i, 2);
-} while(i < n);
