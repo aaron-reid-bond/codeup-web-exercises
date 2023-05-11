@@ -27,15 +27,15 @@
 // console.log(findFactors(ranNum(500, 1)));
 
 // 3
-// function countEs(x) {
-//     if(typeof x === "string"){
-//         let lowercase = x.toLowerCase()
-//         let count = (lowercase.match(/e/g) || []).length;
-//         return count
-//     } else {
-//         return false
-//     }
-// }
+function countEs(x) {
+    if(typeof x === "string"){
+        let lowercase = x.toLowerCase()
+        let count = (lowercase.match(/e/g) || []).length;
+        return count
+    } else {
+        return false
+    }
+}
 //
 // console.log(countEs("Ease")); // returns 2;
 // console.log(countEs("teleconference")); // returns 5;
@@ -105,3 +105,14 @@
 // console.log(addEmUp([-100])); // returns -100
 // console.log(addEmUp([1,2,3,4,5,6,7,8,9,10])); // returns 55
 // console.log(addEmUp([-13, -92, -3500])) // returns -3605
+
+//8
+// function explainString(str){
+//     return {
+//         string: str,
+//         numberOfEs: countEs(str),
+//         isEvenLength: (str.length % 2 ===0)
+//     }
+// }
+// console.log(explainString("cheese"));
+// console.log(explainString("dog"));
