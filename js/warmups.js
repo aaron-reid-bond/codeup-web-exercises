@@ -153,14 +153,39 @@ const hamsters = [
         dateOfBirth: "January 14"
     }
 ];
+//
+// function extractNames(obj) {
+//    let arr= []
+//        obj.forEach(function (el){
+//            arr.push(el.name);
+//        });
+//    return arr
+// }
+//
+//
+// console.log(extractNames(hamsters)); // returns ["Hamtaro", "Bijou", "Oxnard", "Boss", "Snoozer"];
 
-function extractNames(obj) {
-   let arr= []
-       obj.forEach(function (el){
-           arr.push(el.name);
-       });
-   return arr
+// 10
+
+function heightMM (arr) {
+    const res = {
+        name: '',
+        heightInMM: -Infinity,
+        fur: '',
+        gender: '',
+        dateOfBirth: ''
+    };
+    arr.forEach(el => {
+        const { name, heightInMM, fur, gender, dateOfBirth} = el;
+        if(heightInMM > res.heightInMM){
+            res.name = name;
+            res.heightInMM = heightInMM;
+            res.fur = fur
+            res.gender = gender
+            res.dateOfBirth = dateOfBirth
+        };
+    });
+    return res;
 }
 
-
-console.log(extractNames(hamsters)); // returns ["Hamtaro", "Bijou", "Oxnard", "Boss", "Snoozer"];
+console.log(heightMM(hamsters));
