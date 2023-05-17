@@ -192,25 +192,36 @@ const hamsters = [
 
 // 11
 
-function singleFurColor(arr) {
-    const res = {
-        name: '',
-        heightInMM: '',
-        fur: '',
-        gender: '',
-        dateOfBirth: ''
-    };
-    arr.forEach(el => {
-        const {name, heightInMM, fur, gender, dateOfBirth} = el;
-        if(fur > res.fur){
-            res.name = name;
-            res.heightInMM = heightInMM;
-            res.fur = fur
-            res.gender = gender
-            res.dateOfBirth = dateOfBirth
-        };
-    });
-    return res
+// function singleFurColor(arr) {
+//     const res = {
+//         name: '',
+//         heightInMM: '',
+//         fur: '',
+//         gender: '',
+//         dateOfBirth: ''
+//     };
+//     arr.forEach(el => {
+//         const {name, heightInMM, fur, gender, dateOfBirth} = el;
+//         if(fur > res.fur){
+//             res.name = name;
+//             res.heightInMM = heightInMM;
+//             res.fur = fur
+//             res.gender = gender
+//             res.dateOfBirth = dateOfBirth
+//         };
+//     });
+//     return res
+// }
+//
+// console.log(singleFurColor(hamsters));
+
+function mostColorful (arr) {
+    let mostFurs = {fur: []};
+    arr.forEach(function (obj) {
+        if(obj.fur > mostFurs.fur) {
+          return obj
+        }
+    })
 }
 
-console.log(singleFurColor(hamsters));
+console.log(mostColorful(hamsters));
