@@ -215,13 +215,15 @@ const hamsters = [
 //
 // console.log(singleFurColor(hamsters));
 
-function mostColorful (arr) {
-    let mostFurs = {fur: []};
-    arr.forEach(function (obj) {
-        if(obj.fur > mostFurs.fur) {
-          return obj
+// 12
+function mostColorful(arr) {
+    let mostColors = {fur: []};
+    arr.forEach(function(obj) {
+        if (obj.fur.length > mostColors.fur.length) {
+            mostColors = obj;
         }
-    })
+    });
+    return mostColors;
 }
 
 console.log(mostColorful(hamsters));
