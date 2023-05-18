@@ -11,31 +11,31 @@
 // function ranNum (max, min){
 //     return Math.floor(Math.random() * (max - min +1)) + min;
 // }
-// function findFactors(x) {
-//     let arr = []
-//     if(typeof x === "number" && !isNaN(x)) {
-//         for(let i = 1; i <= x; i++){
-//             if (x % i === 0) {
-//                 arr.push(i)
-//             }
-//         } console.log(arr)
-//     } else {
-//         return false
-//     }
-// }
-//
-// console.log(findFactors(ranNum(500, 1)));
-
-// 3
-function countEs(x) {
-    if(typeof x === "string"){
-        let lowercase = x.toLowerCase()
-        let count = (lowercase.match(/e/g) || []).length;
-        return count
+function findFactors(x) {
+    let arr = []
+    if(typeof x === "number" && !isNaN(x)) {
+        for(let i = 1; i <= x; i++){
+            if (x % i === 0) {
+                arr.push(i)
+            }
+        } console.log(arr)
     } else {
         return false
     }
 }
+//
+// console.log(findFactors(ranNum(500, 1)));
+
+// 3
+// function countEs(x) {
+//     if(typeof x === "string"){
+//         let lowercase = x.toLowerCase()
+//         let count = (lowercase.match(/e/g) || []).length;
+//         return count
+//     } else {
+//         return false
+//     }
+// }
 //
 // console.log(countEs("Ease")); // returns 2;
 // console.log(countEs("teleconference")); // returns 5;
@@ -216,14 +216,28 @@ const hamsters = [
 // console.log(singleFurColor(hamsters));
 
 // 12
-function mostColorful(arr) {
-    let mostColors = {fur: []};
-    arr.forEach(function(obj) {
-        if (obj.fur.length > mostColors.fur.length) {
-            mostColors = obj;
-        }
-    });
-    return mostColors;
-}
+// function mostColorful(arr) {
+//     let mostColors = {fur: []};
+//     arr.forEach(function(obj) {
+//         if (obj.fur.length > mostColors.fur.length) {
+//             mostColors = obj;
+//         }
+//     });
+//     return mostColors;
+// }
+//
+// console.log(mostColorful(hamsters));
 
-console.log(mostColorful(hamsters));
+// 13
+// function describeNumber(num){
+//
+//     let obj = {
+//         number: num,
+//         evenOrOdd: ((num % 2 === 0) ? 'even' : 'odd'),
+//         factors: findFactors(num),
+//         numberOfDigits: (`${num}`).length
+//         }
+//     return obj
+// }
+// I was unable to get this one complete
+// console.log(describeNumber(19));
