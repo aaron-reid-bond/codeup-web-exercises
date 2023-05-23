@@ -1,0 +1,20 @@
+.Width{
+    width: 100vw;
+    height: 100vh;
+}
+
+.youtube-container {
+    overflow: hidden;
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+    /* Keep it the right aspect-ratio */
+    aspect-ratio: 16/9;
+    /* No clicking/hover effects */
+    /*pointer-events: none;*/
+}
+.cover{
+    width: 100vw;
+    height: 100vh;
+}
+
+
