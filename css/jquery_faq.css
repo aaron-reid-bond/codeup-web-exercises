@@ -18,3 +18,16 @@
     bottom: 0;
     width: 100%;
 }
+
+#pad {
+    margin-bottom: 7.5vh;
+}
+.highlightYellow {
+    background: yellow;
+}
+.bold {
+    font-weight: bold
+}
+.blue{
+    color: blue;
+}
