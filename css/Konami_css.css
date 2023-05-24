@@ -27,3 +27,7 @@ iframe {
     height: inherit;
 }
 
+#code{
+    width: 200px;
+}
+
