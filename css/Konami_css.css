@@ -8,5 +8,22 @@
     height: 100vh;
     margin: 0;
 }
+#rick{
+    overflow: hidden;
+    position: absolute;
+    left: 100px;
+    top: 122px
+}
+#deal{
+    scale: .65;
+    rotate: 9deg;
+}
+.youtube-container{
+    height: 0;
+    float: left;
 
+}
+iframe {
+    height: inherit;
+}
 
