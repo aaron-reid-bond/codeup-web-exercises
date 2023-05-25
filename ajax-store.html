@@ -7,6 +7,7 @@
 
 <h1>My Tool Store</h1>
 
+<button id="bt1" type="submit">Click here for product</button>
 <table id="products">
   <thead>
   <tr>
@@ -26,19 +27,21 @@
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
 
-    $.get('data/inventory.json').done(function(data) {
-      console.log(data);
+    $('#bt1').on('click', function (){
+      $.get('data/inventory.json').done(function(data) {
+        console.log(data);
 
-      $('#insertProducts').html('');
+        $('#insertProducts').html('');
 
 
-      data.forEach(function (el, index){
-        $('#insertProducts').append(`<tr><td>${el.title}</td></tr>`)
-        $('#insertProducts').children().eq(index).append(`<td>${el.quantity}</td>`)
-        $('#insertProducts').children().eq(index).append(`<td>${el.price}</td>`)
-        $('#insertProducts').children().eq(index).append(`<td>${el.categories}</td>`)
-      });
+        data.forEach(function (el, index){
+          $('#insertProducts').append(`<tr><td>${el.title}</td></tr>`)
+          $('#insertProducts').children().eq(index).append(`<td>${el.quantity}</td>`)
+          $('#insertProducts').children().eq(index).append(`<td>${el.price}</td>`)
+          $('#insertProducts').children().eq(index).append(`<td>${el.categories}</td>`)
+        });
 
+      })
     })
 
     // TODO: Take the data from inventory.json and append it to the products table
