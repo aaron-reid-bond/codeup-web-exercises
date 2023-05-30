@@ -87,14 +87,17 @@
   });
 
   resturants.forEach(function (el){
-    var marker = new mapboxgl.Marker()
+    var marker = new mapboxgl.Marker({
+      color: "grey"
+    })
             .setLngLat(el.location)
-            .setPopup(new mapboxgl.Popup().setHTML(`<div class=\"card mt-3\" style=\"width: 100%;\">\n` +
+            .setPopup(new mapboxgl.Popup({closeButton: false}).setHTML(`<div class=\"card mt-3\" style=\"width: 100%;\">\n` +
                     `  <img src=\"${el.img}\" class=\"card-img-top img-fluid\" alt=\"...\">\n` +
                     `  <div class=\"card-body\">\n` +
                     `    <p class=\"card-text\">${el.name}, ${el.description}</p>\n` +
                     `  </div>\n` +
                     `</div>`))
+
             .addTo(map);
   })
 
