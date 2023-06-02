@@ -7,6 +7,7 @@ var map = new mapboxgl.Map({
     center: [-115.17020709981152, 36.16092912022204]
 });
 
+// Pulls the weather info for the start location
 geocode("las Vegas", mapBoxKey).then(function (result) {
     mapCenterLoc = result;
     map.setCenter(result);
@@ -154,6 +155,7 @@ function reverseGeocode(coordinates, token) {
         });
 }
 
+// thakes the array made in a prior function and reverses the order
 function rev(x){
     return x.reverse()
 }
@@ -165,6 +167,7 @@ let dataSplit2 =[]
 let dataSplit3 =[]
 let dataSplit4 =[]
 let dataSplit5 =[]
+
 
 function weatherData(data) {
     const dataList = data.list

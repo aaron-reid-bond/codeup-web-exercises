@@ -1,3 +1,5 @@
+
+/* this makes the header transparent */
 #header {
     background-color: transparent;
     color: white;
@@ -11,18 +13,28 @@
     z-index: 5;
 }
 
+/* this sets the footer above the map */
+
 footer {
     z-index: 5;
 }
+
+/* this sets the map to 100% x/y and at the back of the window */
 
 #map{
     width: 100vw;
     height: 100vh;
     z-index: 1;
 }
+
+/* this makes the weather icons the size i want */
+
 img {
     width: 75px;
 }
+
+/* this adjusts the weather Max and Min temp where i want */
+
 h1{
     margin-left: 15px;
 }

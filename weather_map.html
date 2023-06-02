@@ -11,29 +11,31 @@
   <title>Title</title>
 </head>
 <body>
+<!-- this is the header for the page -->
 <header id="header">
   <div class="row">
     <div class="col-8 col-xl-4 me-auto">
       <div class="input-group d-flex justify-content-center align-items-center">
+<!--        this is the search -->
         <input id="address-search" type="text" class="form-control bg-transparent text-light ms-2" placeholder="location">
         <button class="btn btn-outline-secondary my-3" type="button" id="address-search-button">Search</button>
       </div>
     </div>
     <div class="col-4 d-flex justify-content-end align-items-center">
+<!--      this is the weather button -->
       <button class="btn btn-primary bg-transparent border-light text-muted me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Weather</button>
     </div>
   </div>
 </header>
+<!-- this is where the map gets placed into the html -->
   <div id='map'></div>
 <footer>
+<!--  this is the off canvas that shows when you click the weather button -->
   <div class="offcanvas offcanvas-bottom bg-transparent " tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-<!--    <div class="offcanvas-header p-2">-->
-<!--      <h5 class="offcanvas-title" id="offcanvasBottomLabel">5 Day forcast</h5>-->
-<!--      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
-<!--    </div>-->
     <div class="offcanvas-body">
       <div class="container-xxl">
         <div class="row d-flex justify-content-center">
+<!--          this is the section were the weather based on day is placed into the html -->
           <div id="day1" class="col-2"></div>
           <div id="day2" class="col-2"></div>
           <div id="day3" class="col-2"></div>
