@@ -81,13 +81,8 @@ let list = '<ul>';
 // TODO: rewrite the following loop to use a for..of loop
 for (const x of developers) {
 
-    console.log(x);
     // TODO: rewrite the assignment below to use template strings
     list += `<li>${x}</li>`;
 };
 list += '</ul>';
-
-
-console.log(developers)
-
-console.log(list)
+$('#es6').html(list)
